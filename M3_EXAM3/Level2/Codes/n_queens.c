@@ -98,10 +98,10 @@ int	main(int argc, char **argv)
    - solve(queens, 0, 1)
    - row=0, n=1, row != n
    - col=0
-   - is_valid(queens, 0, 0) → pas de reine avant, return 1
+   - is_valid(queens, 0, 0) =  pas de reine avant, return 1
    - queens[0] = 0
    - solve(queens, 1, 1)
-     - row=1, n=1, row == n → print "0\n"
+     - row=1, n=1, row == n =  print "0\n"
    - queens[0] = -1
    - col=1, loop end
 */

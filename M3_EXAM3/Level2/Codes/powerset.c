@@ -105,14 +105,14 @@ int	main(int argc, char **argv)
      - index=1, sum=2, sum != target
      - Branche 1.1: prendre arr[1]=3
        - solve_powerset([2,3], 2, 5, [2,3], 2, 5, 2)
-       - sum==target → print "2 3\n"
+       - sum==target =  print "2 3\n"
      - Branche 1.2: sauter arr[1]
        - solve_powerset([2,3], 2, 5, [2], 1, 2, 2)
-       - index==len → return
+       - index==len =  return
    - Branche 2: sauter arr[0]
      - solve_powerset([2,3], 2, 5, [], 0, 0, 1)
      - index=1, sum=0
      - Branche 2.1: prendre arr[1]=3
        - solve_powerset([2,3], 2, 5, [3], 1, 3, 2)
-       - index==len, sum=3 != target → return
+       - index==len, sum=3 != target =  return
 */

@@ -117,38 +117,38 @@ int	main(int argc, char **argv)
    
    TRACE MENTALE (input "(()" — problème: 2 open, 1 close):
    - solve_rip("(()", 0, 3)
-   - is_valid_partial("(()", 0) → open=0, close=0 → return 1
+   - is_valid_partial("(()", 0) =  open=0, close=0 =  return 1
    - depth != 3
    - Choix 1: garder result[0]='('
      - solve_rip("(()", 1, 3)
-     - is_valid_partial("(()", 1) → open=1, close=0 → return 1
+     - is_valid_partial("(()", 1) =  open=1, close=0 =  return 1
      - depth != 3
      - Choix 1.1: garder result[1]='('
        - solve_rip("(()", 2, 3)
-       - is_valid_partial("(()", 2) → open=2, close=0 → return 1
+       - is_valid_partial("(()", 2) =  open=2, close=0 =  return 1
        - Choix 1.1.1: garder result[2]=')'
          - solve_rip("(()", 3, 3)
-         - depth==3, is_balanced("(()") → open=2, close=1 → return 0
-       - Choix 1.1.2: remplacer result[2]=' ' → "(_ "
+         - depth==3, is_balanced("(()") =  open=2, close=1 =  return 0
+       - Choix 1.1.2: remplacer result[2]=' ' =  "(_ "
          - solve_rip("(( ", 3, 3)
-         - depth==3, is_balanced("(( ") → open=2, close=0 → return 0
+         - depth==3, is_balanced("(( ") =  open=2, close=0 =  return 0
      - Choix 1.2: remplacer result[1]=' '
        - solve_rip("( ()", 2, 3)
-       - is_valid_partial("( ()", 2) → open=2, close=0 → return 1
+       - is_valid_partial("( ()", 2) =  open=2, close=0 =  return 1
        - Choix 1.2.1: garder result[2]=')'
          - solve_rip("( ()", 3, 3)
-         - is_balanced("( ()") → open=2, close=1 → return 0
+         - is_balanced("( ()") =  open=2, close=1 =  return 0
        - Choix 1.2.2: remplacer result[2]=' '
          - solve_rip("( ( ", 3, 3)
-         - is_balanced("( ( ") → open=2, close=0 → return 0
+         - is_balanced("( ( ") =  open=2, close=0 =  return 0
    - Choix 2: remplacer result[0]=' '
      - solve_rip(" ()", 1, 3)
-     - is_valid_partial(" ()", 1) → open=0, close=0 → return 1
+     - is_valid_partial(" ()", 1) =  open=0, close=0 =  return 1
      - Choix 2.1: garder result[1]='('
        - solve_rip(" ()", 2, 3)
-       - is_valid_partial(" ()", 2) → open=1, close=0 → return 1
+       - is_valid_partial(" ()", 2) =  open=1, close=0 =  return 1
        - Choix 2.1.1: garder result[2]=')'
          - solve_rip(" ()", 3, 3)
-         - is_balanced(" ()") → open=1, close=1 → return 1 → PRINT " ()\n"
+         - is_balanced(" ()") =  open=1, close=1 =  return 1 =  PRINT " ()\n"
 */
 

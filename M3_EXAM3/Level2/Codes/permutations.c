@@ -94,7 +94,7 @@ int	main(int argc, char **argv)
      - depth=1, i=1: str[1]='b', used[1]=0
        - result[1]='b'
        - solve_perm("ab", "ab", [1,1], 2, 2)
-       - depth=2 == len → print "ab\n"
+       - depth=2 == len =  print "ab\n"
      - used[1]=0
    - used[0]=0
    - i=1: str[1]='b', used[1]=0
@@ -104,5 +104,5 @@ int	main(int argc, char **argv)
      - depth=1, i=0: str[0]='a', used[0]=0
        - result[1]='a'
        - solve_perm("ab", "ba", [1,1], 2, 2)
-       - depth=2 == len → print "ba\n"
+       - depth=2 == len =  print "ba\n"
 */

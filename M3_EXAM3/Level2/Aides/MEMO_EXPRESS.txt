@@ -1,6 +1,6 @@
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║                    EXAM RANK 03 - MEMO EXPRESS                              ║
-║                      Lundi soir → Exam demain matin                          ║
+║                      Lundi soir =  Exam demain matin                          ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 ════════════════════════════════════════════════════════════════════════════════
@@ -74,8 +74,8 @@ AFFICHAGE:
     cba
 
 PIÈGES:
-  ✗ Oublier le used[] → duplicate characters
-  ✗ Oublier le used[i] = 0 (UNDO) → toutes solutions après sont invalides
+  ✗ Oublier le used[] =  duplicate characters
+  ✗ Oublier le used[i] = 0 (UNDO) =  toutes solutions après sont invalides
 
 ════════════════════════════════════════════════════════════════════════════════
 3. POWERSET (Subset Sum) 🎯
@@ -117,9 +117,9 @@ AFFICHAGE:
     2 -2
 
 PIÈGES:
-  ✗ Confondre avec "subset de taille k" → NON, c'est "subset somme k"
-  ✗ Oublier le cas target=0 → l'ensemble vide est une solution!
-  ✗ Mélanger l'ordre d'input → les tests y font attention
+  ✗ Confondre avec "subset de taille k" =  NON, c'est "subset somme k"
+  ✗ Oublier le cas target=0 =  l'ensemble vide est une solution!
+  ✗ Mélanger l'ordre d'input =  les tests y font attention
 
 ════════════════════════════════════════════════════════════════════════════════
 4. RIP (Remove Invalid Parenthesis) 🗑️
@@ -132,7 +132,7 @@ PROBLÈME:
 LE TRICK:
   • À chaque position: garder le caractère OU le remplacer par espace
   • PENDANT la construction, vérifier: à chaque étape, open >= close
-  • Si à un moment close > open, ce branch ne peut jamais être valide → prune!
+  • Si à un moment close > open, ce branch ne peut jamais être valide =  prune!
   • À la fin, check: open == close
 
 PSEUDO-CODE MINIMAL:
@@ -173,7 +173,7 @@ AFFICHAGE:
 
 PIÈGES:
   ✗ Supprimer les caractères au lieu de les remplacer par espaces
-  ✗ Oublier le pruning (close > open) → va explorer 2^n branches inutiles
+  ✗ Oublier le pruning (close > open) =  va explorer 2^n branches inutiles
   ✗ Oublier de vérifier open==close à la fin
 
 ════════════════════════════════════════════════════════════════════════════════
