@@ -19,5 +19,8 @@ the error message in stderr and return 1.
 $> echo 'abcdefgaaaabcdefabc' | ./filter abc | cat -e
 ***defgaaa***def***
 
+$> echo 'ababcabababc' | ./filter ababc | cat -e
+*****ab*****
+
 If the program is called whitout argument or with an empty argument or with
 multiples arguments it must return 1.

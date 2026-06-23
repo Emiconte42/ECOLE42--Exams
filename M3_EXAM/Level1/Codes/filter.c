@@ -12,7 +12,10 @@ int main(int argc, char **argv)
     int     ret;
 
     if (argc != 2 || argv[1][0] == '\0')
+    {
+        write(2, "Error: invalid argument\n", 24);
         return (1);
+    }
     wlen = strlen(argv[1]);
     i = 0;
     while ((ret = read(0, &c, 1)) > 0)
